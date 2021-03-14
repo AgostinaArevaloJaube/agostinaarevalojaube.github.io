@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import BurgerOpen from "../assets/burger.svg";
-import BurgerClosed from "../assets/burger-closed.svg";
+import BurgerOpen from "../../assets/burger.svg";
+import BurgerClosed from "../../assets/burger-closed.svg";
 import styled from "styled-components";
-import theme from "../styles/theme";
+import theme from "../../styles/theme";
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);

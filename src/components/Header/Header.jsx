@@ -1,6 +1,6 @@
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
-import theme from "../styles/theme";
+import theme from "../../styles/theme";
 import Navbar from "./Navbar";
 
 function Header() {
