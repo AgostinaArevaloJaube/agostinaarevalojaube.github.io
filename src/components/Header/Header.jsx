@@ -1,4 +1,3 @@
-import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import Navbar from "./Navbar";
@@ -7,9 +6,9 @@ function Header() {
 	return (
 		<HeaderContainer>
 			<Title>
-				<HashLinks to="#hero">
+				<Link href="#hero">
 					Agostina <span>Arevalo Jaube</span>
-				</HashLinks>
+				</Link>
 			</Title>
 			<Navbar />
 		</HeaderContainer>
@@ -21,16 +20,18 @@ const HeaderContainer = styled.header`
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 0.5rem;
 	height: 7vh;
 	display: flex;
 	justify-content: space-between;
+	padding: 0.5rem;
 	align-items: center;
 	box-shadow: ${theme.colors.darkBoxShadow};
+	background-color: #faf8f8;
 	z-index: 2000;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
+	font-size: 1.5em;
 	background: ${theme.colors.desktopGradient};
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -51,7 +52,7 @@ const Title = styled.h2`
 	}
 `;
 
-const HashLinks = styled(HashLink)`
+const Link = styled.a`
 	text-decoration: none;
 `;
 
