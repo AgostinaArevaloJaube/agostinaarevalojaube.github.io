@@ -4,7 +4,7 @@ const theme = {
 			"linear-gradient(90deg, rgba(239,129,170,1) 0%, rgba(239,168,131,1) 100%)",
 		mobileGradient:
 			"linear-gradient(0deg, rgba(239,129,170,1) 0%, rgba(239,168,131,1) 100%)",
-		darkBoxShadow: "0px 0px 10px 0px #D9ADA9"
+		darkBoxShadow: "22px 22px 100px 7px rgb(217 173 169 / 40%)"
 	},
 
 	fonts: {
