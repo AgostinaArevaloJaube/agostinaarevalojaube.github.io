@@ -14,6 +14,7 @@ body {
 	height: 100vh;
 	padding: 0.5rem;
 	background-color: #faf8f8;
+	scroll-behavior: smooth;
 }
 `;
 export default GlobalStyle;
