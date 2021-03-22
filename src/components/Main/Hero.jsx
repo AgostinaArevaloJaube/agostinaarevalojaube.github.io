@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import Typewriter from "typewriter-effect";
-
-// Falta responsivear, empezar en mobile
-
+import CV from "../../documents/CV-Agostina-Arevalo-Jaube.pdf";
 function Hero() {
 	return (
 		<HeroContainer>
@@ -34,11 +32,41 @@ function Hero() {
 			</TyperwriterContianer>
 
 			<IconsContainer>
-				{/* faltan los <a></a> */}
-				<i className="fab fa-github-square icons"></i>
-				<i className="fab fa-linkedin icons"></i>
-				<i className="fas fa-envelope-square icons"></i>
-				<i className="fas fa-download icons"></i>
+				<a
+					href="https://github.com/AgostinaArevaloJaube"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Ir a Github de Agostina Arevalo Jaube"
+				>
+					<i className="fab fa-github-square icons" />
+				</a>
+
+				<a
+					href="https://www.linkedin.com/in/agostinaarevalojaube/"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Ir a LinkedIn de Agostina Arevalo Jaube"
+				>
+					<i className="fab fa-linkedin icons" />
+				</a>
+
+				<a
+					href="mailto:agosarevalo@gmail.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Enviar mail a Agostina Arevalo Jaube"
+				>
+					<i className="fas fa-envelope-square icons" />
+				</a>
+				<a
+					href={CV}
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Descargar CV de Agostina Arevalo Jaube"
+					download
+				>
+					<i className="fas fa-download icons" />
+				</a>
 			</IconsContainer>
 		</HeroContainer>
 	);
