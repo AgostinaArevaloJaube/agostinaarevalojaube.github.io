@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { HashLink } from "react-router-hash-link";
 import BurgerOpen from "../../assets/burger.svg";
 import BurgerClosed from "../../assets/burger-closed.svg";
 import styled from "styled-components";
@@ -20,18 +19,18 @@ function Navbar() {
 				)}
 			</Hamburger>
 			<MenuList isOpen={isOpen}>
-				<MenuLinks onClick={handleClosingNavbar}>
-					<HashLinks to="#about">Sobre mi</HashLinks>
-				</MenuLinks>
-				<MenuLinks onClick={handleClosingNavbar}>
-					<HashLinks to="#stack">Tecnologías</HashLinks>
-				</MenuLinks>
-				<MenuLinks onClick={handleClosingNavbar}>
-					<HashLinks to="#proyectos">Proyectos</HashLinks>
-				</MenuLinks>
-				<MenuLinks onClick={handleClosingNavbar}>
-					<HashLinks to="#hero">Contacto</HashLinks>
-				</MenuLinks>
+				<MenuLi onClick={handleClosingNavbar}>
+					<Links href="#about">Sobre mi</Links>
+				</MenuLi>
+				<MenuLi onClick={handleClosingNavbar}>
+					<Links href="#stack">Tecnologías</Links>
+				</MenuLi>
+				<MenuLi onClick={handleClosingNavbar}>
+					<Links href="#proyectos">Proyectos</Links>
+				</MenuLi>
+				<MenuLi onClick={handleClosingNavbar}>
+					<Links href="#hero">Contacto</Links>
+				</MenuLi>
 			</MenuList>
 		</nav>
 	);
@@ -68,7 +67,7 @@ const MenuList = styled.ul`
 	}
 `;
 
-const MenuLinks = styled.li`
+const MenuLi = styled.li`
 	padding: 2rem 0.5rem;
 	width: 100%;
 	text-align: center;
@@ -81,7 +80,7 @@ const MenuLinks = styled.li`
 	}
 `;
 
-const HashLinks = styled(HashLink)`
+const Links = styled.a`
 	text-decoration: none;
 	color: #fff;
 
