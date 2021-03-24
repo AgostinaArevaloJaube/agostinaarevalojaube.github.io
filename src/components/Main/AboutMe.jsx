@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
 import SectionContainer from "../../styles/SectionContainer";
-import FotoAgos from "../../assets/foto-agos-perfiles.png";
+import FotoAgos from "../../assets/foto-agos-perfiles.webp";
 
 function AboutMe() {
 	return (
