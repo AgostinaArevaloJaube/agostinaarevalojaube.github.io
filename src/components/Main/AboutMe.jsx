@@ -62,7 +62,14 @@ const InfoContainer = styled.article`
 
 const Avatar = styled.img`
 	width: 120px;
-	border-radius: 100%;
+	border-radius: 100px;
+
+	@media ${theme.mediaQueries.above768} {
+		width: 150px;
+	}
+	@media ${theme.mediaQueries.above900} {
+		width: 170px;
+	}
 `;
 
 const Title = styled.h2`
