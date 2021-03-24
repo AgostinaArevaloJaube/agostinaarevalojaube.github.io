@@ -47,7 +47,7 @@ const Hamburger = styled.div`
 
 const MenuList = styled.ul`
 	position: absolute;
-	top: 2.5rem;
+	top: 2.4rem;
 	left: 0;
 	width: 100%;
 	height: ${({ isOpen }) => (isOpen ? "100vh" : "0")};
