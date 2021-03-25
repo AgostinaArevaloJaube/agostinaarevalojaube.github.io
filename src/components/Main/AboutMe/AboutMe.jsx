@@ -39,11 +39,10 @@ function AboutMe() {
 					Developer.
 				</Paragraph>
 				<Paragraph>
-					Me encantaría ser parte de
-					<b>proyectos desafiantes</b>, donde se pueda{" "}
-					<b>crecer profesionalmente</b>, <b>trabajar en equipo</b> con{" "}
-					<b>tecnologías de vanguardia</b> , donde puedar colaborar en
-					propuestas innovadoras y aprender constantemente.
+					Me encantaría ser parte de proyectos desafiantes, donde pueda crecer
+					profesionalmente, trabajar en equipo con tecnologías de vanguardia,
+					donde puedar colaborar en propuestas innovadoras y aprender
+					constantemente.
 				</Paragraph>
 			</ParagraphContainer>
 		</AboutContainer>
